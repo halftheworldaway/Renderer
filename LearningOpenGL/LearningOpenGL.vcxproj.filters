@@ -21,7 +21,7 @@
     <ClCompile Include="src\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="shader.cpp">
+    <ClCompile Include="src\shader.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -30,7 +30,7 @@
     <None Include="src\shaders\FragmentShader.shader" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="shader.h">
+    <ClInclude Include="src\shader.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
