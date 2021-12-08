@@ -1,6 +1,6 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-
+#include "stb_image.h"
 #include <iostream>
 #include "shader.h"
 
@@ -46,7 +46,12 @@ int main()
 
   // build and compile our shader program
   // ------------------------------------
-  Shader ourShader("shaders/", "3.3.shader.fs"); // you can name your shader files however you like
+  Shader ourShader("src/shaders/vertexshader.shader", "src/shaders/FragmentShader.shader", nullptr); // you can name your shader files however you like
+
+  //Texture create
+
+
+
 
   // set up vertex data (and buffer(s)) and configure vertex attributes
   // ------------------------------------------------------------------
@@ -59,9 +64,9 @@ int main()
 
 
   unsigned int VBO, VAO;
+  // bind the Vertex Array Object first, then bind and set vertex buffer(s), and then configure vertex attributes(s).
   glGenVertexArrays(1, &VAO);
   glGenBuffers(1, &VBO);
-  // bind the Vertex Array Object first, then bind and set vertex buffer(s), and then configure vertex attributes(s).
   glBindVertexArray(VAO);
 
   glBindBuffer(GL_ARRAY_BUFFER, VBO);

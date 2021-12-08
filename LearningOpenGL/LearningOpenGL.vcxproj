@@ -148,6 +148,7 @@
     <ClCompile Include="src\shader.cpp" />
     <ClCompile Include="src\Application.cpp" />
     <ClCompile Include="src\glad.c" />
+    <ClCompile Include="src\stb_image.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\shaders\FragmentShader.shader" />
@@ -155,6 +156,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\shader.h" />
+    <ClInclude Include="src\stb_image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="texture\wall.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
