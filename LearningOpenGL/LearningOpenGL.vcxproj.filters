@@ -32,8 +32,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\shaders\vertexshader.shader" />
-    <None Include="src\shaders\FragmentShader.shader" />
+    <None Include="src\shaders\vertexshader.vs" />
+    <None Include="src\shaders\FragmentShader.fs" />
     <None Include="src\glm\detail\func_common.inl">
       <Filter>头文件</Filter>
     </None>
@@ -442,6 +442,8 @@
     <None Include="src\glm\gtx\wrap.inl">
       <Filter>头文件</Filter>
     </None>
+    <None Include="src\shaders\light_cube.vs" />
+    <None Include="src\shaders\light_cube.fs" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\shader.h">
@@ -1294,6 +1296,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="src\glm\vector_relational.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\camera.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

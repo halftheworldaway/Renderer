@@ -294,10 +294,13 @@
     <None Include="src\glm\gtx\vector_angle.inl" />
     <None Include="src\glm\gtx\vector_query.inl" />
     <None Include="src\glm\gtx\wrap.inl" />
-    <None Include="src\shaders\FragmentShader.shader" />
-    <None Include="src\shaders\vertexshader.shader" />
+    <None Include="src\shaders\FragmentShader.fs" />
+    <None Include="src\shaders\light_cube.fs" />
+    <None Include="src\shaders\light_cube.vs" />
+    <None Include="src\shaders\vertexshader.vs" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\camera.h" />
     <ClInclude Include="src\glm\common.hpp" />
     <ClInclude Include="src\glm\detail\compute_common.hpp" />
     <ClInclude Include="src\glm\detail\compute_vector_relational.hpp" />
